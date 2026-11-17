@@ -1,0 +1,165 @@
+.welcome {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.learn {
+    background-color:skyblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px;
+    color:white;
+    text-decoration:none;
+    transition: background-color .3s ease;
+}
+
+.learn:hover {
+    background-color: blue;
+}
+
+.learn a:hover {
+    color:white;
+}
+
+.learn a {
+    color:black;
+}
+
+.signup-form {
+    margin: 30px;
+    padding: 35px;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.submit-btn {
+    height: 50px;
+    background-color: blue;
+    color: white;
+    background-image: linear-gradient(to right, skyblue, blue);
+    transition: background-position 1s linear;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+.submit-btn:hover {
+    background-position: 1000px 0;
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 30px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+}
+
+.maincontent img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: skyblue;
+    padding:30px;
+}
+
+.firstimage:hover {
+    animation: imageone .8s;
+}
+
+.secondimage:hover {
+    animation: imagetwo .8s;
+}
+
+.thirdimage:hover {
+    animation: imagethree .8s;
+}
+
+@keyframes imageone {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+@keyframes imagetwo {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+@keyframes imagethree {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+        grid-template-rows: 1.5fr, 1fr;
+    }
+
+    .welcome{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .signup-form {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .maincontent {
+        grid-column:1/3;
+        grid-row:2/3;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .maincontent img{
+        width: 25vw;
+    }
+}
+
+body {
+    font-family: "Lobster Two", sans-serif;
+}

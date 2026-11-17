@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Ben Tepper A4</title>
+</head>
+
+<body>
+<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">A Marvelous Website</a>
+    <button class="navbar-burger" type="button"
+        aria-label="menu" aria-expanded="false"
+        aria-controls="navMenu">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</button>
+  </div>
+  <div class="navbar-menu" id="navMenu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#">Home</a>
+      <a class="navbar-item" href="#">About</a>
+      <a class="navbar-item" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+<main>
+<header class="welcome">
+    <h1 class="title is-1">Welcome.</h1>
+    <h2 class="subtitle is-3">We are so glad you are here!</h2>
+    <div class="learn">
+        <button>
+            <a href="#">Learn More</a>
+        </button>
+    </div>
+</header>
+<form method="POST" action="/" class="signup-form">
+
+    <h2>Join our mailing list for updates!</h2>
+
+    <div class="form-group">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+    </div>
+
+    <button type="submit" class="submit-btn">
+        SUBMIT
+    </button>
+</form>
+<div class="maincontent">
+  <img class="firstimage" src="images/chopping_cilantro.jpg" alt="Photo of a man cutting cilantro on a cutting board">
+  <img class="secondimage" src="images/chopping_tomato.jpg" alt="Photo of a man cutting tomatoes on a cutting board">
+  <img class="thirdimage" src="images/CuttingBoard.jpg" alt="Photo of vegetables, eggs, and a knife resting on a wooden cutting board">
+</div>
+</main>
+<footer>
+  <p>&copy; Ben Tepper-Comp126</p>
+</footer>
+<script src="navbar.js"></script>
+</body>
+
+</html>
